@@ -8,37 +8,53 @@ import FeaturedMemesSection from "./components/featuredMemesSection";
 import CreatorsSection from "./components/creatorsSection";
 import Creators from "./components/creators";
 import NewsLetterSection from "./components/newsLetterSection";
+import SideBar from "./components/sideBar";
+import SideBarCompeticoes from "./components/sideBarCompeticoes";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
+      <div className={styles.mainContent}>
       <div className={styles.contentArea}>
-      <HeroSection />
-      <CategoriesSection />
-      <Feed />
-      <FeaturedMemesSection />
-      <CreatorsSection>
-        <Creators
-          name={"MemeQueen"}
-          avatar={"https://i.pravatar.cc/150?img=23"}
-          followers={"245K"}
-          bio={"Criando memes que fazem seu dia melhor!"}
+        <HeroSection />
+        <CategoriesSection />
+        <Feed />
+        <FeaturedMemesSection />
+        <CreatorsSection>
+          <Creators
+            name={"MemeQueen"}
+            avatar={"https://i.pravatar.cc/150?img=23"}
+            followers={"245K"}
+            bio={"Criando memes que fazem seu dia melhor!"}
+          />
+          <Creators
+            name={"FunnyGuy42"}
+            avatar={"https://i.pravatar.cc/150?img=24"}
+            followers={"189K"}
+            bio={"Especialista em memes de programação e gatos"}
+          />
+          <Creators
+            name={"LaughFactory"}
+            avatar={"https://i.pravatar.cc/150?img=25"}
+            followers={"327K"}
+            bio={"Se não te fizer rir, devolvo seu tempo!"}
+          />
+        </CreatorsSection>
+        <NewsLetterSection />
+      </div>
+      <SideBar>
+        <SideBarCompeticoes
+          title={"Competições de Memes 2025"}
+          date={"15 de Maio, 2025"}
+          participants={356}
         />
-        <Creators
-          name={"FunnyGuy42"}
-          avatar={"https://i.pravatar.cc/150?img=24"}
-          followers={"189K"}
-          bio={"Especialista em memes de programação e gatos"}
+        <SideBarCompeticoes
+          title={"Workshop: Como Criar Memes Virais"}
+          date={"22 de Maio, 2025"}
+          participants={127}
         />
-        <Creators
-          name={"LaughFactory"}
-          avatar={"https://i.pravatar.cc/150?img=25"}
-          followers={"327K"}
-          bio={"Se não te fizer rir, devolvo seu tempo!"}
-        />
-      </CreatorsSection>
-      <NewsLetterSection />
+      </SideBar>
       </div>
       <Footer />
     </div>
