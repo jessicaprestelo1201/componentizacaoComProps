@@ -1,9 +1,9 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import HeroSection from "./components/heroSection";
 import CategoriesSection from "./components/categoriesSection";
+import Feed from "./components/feed";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CategoriesSection />
+      <Feed />
       <Footer />
     </div>
   );
