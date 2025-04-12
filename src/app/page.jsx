@@ -7,11 +7,13 @@ import Feed from "./components/feed";
 import FeaturedMemesSection from "./components/featuredMemesSection";
 import CreatorsSection from "./components/creatorsSection";
 import Creators from "./components/creators";
+import NewsLetterSection from "./components/newsLetterSection";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
+      <div className={styles.contentArea}>
       <HeroSection />
       <CategoriesSection />
       <Feed />
@@ -36,6 +38,8 @@ export default function Home() {
           bio={"Se não te fizer rir, devolvo seu tempo!"}
         />
       </CreatorsSection>
+      <NewsLetterSection />
+      </div>
       <Footer />
     </div>
   );
