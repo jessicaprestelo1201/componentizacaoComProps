@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import HeroSection from "./components/heroSection";
 import CategoriesSection from "./components/categoriesSection";
 import Feed from "./components/feed";
+import FeaturedMemesSection from "./components/featuredMemesSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <CategoriesSection />
       <Feed />
+      <FeaturedMemesSection />
       <Footer />
     </div>
   );
